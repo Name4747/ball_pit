@@ -2,7 +2,7 @@ Ball[] balls = new Ball[400];
 int num = 0;
 public void setup() {
   size(600,600);
-  balls[0] = new Ball();
+  //balls[0] = new Ball();
   //for (int i = 0; i < balls.length; i++) {
     //balls[i] = new Ball();
   //}
@@ -10,6 +10,7 @@ public void setup() {
 
 public void draw() {
   background(255);
+  
   for(int i = 0; i < num; i++) {
     balls[i].move();
     balls[i].draw();
@@ -19,6 +20,6 @@ public void draw() {
 }
 
 public void mousePressed() {
-  num++;
   balls[num] = new Ball();
+  num++;
 }

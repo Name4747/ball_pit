@@ -3,15 +3,15 @@ public class Ball {
   int size;
   
   public Ball() {
-    this.x = (int) random(0,600);
-    this.y = (int) random(0,600);
+    this.x = (int) mouseX;
+    this.y = (int) mouseY;
     this.size = 10;
     this.vx = 3;
     this.vy = 3;
   }
   
   public void draw() {
-    fill(255,0,0);
+    fill(#66ccff);
     circle(x,y,size);
   }
   
