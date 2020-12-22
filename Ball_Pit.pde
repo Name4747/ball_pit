@@ -2,10 +2,6 @@ Ball[] balls = new Ball[400];
 int num = 0;
 public void setup() {
   size(600,600);
-  //balls[0] = new Ball();
-  //for (int i = 0; i < balls.length; i++) {
-    //balls[i] = new Ball();
-  //}
 }
 
 public void draw() {
@@ -15,11 +11,18 @@ public void draw() {
     balls[i].move();
     balls[i].draw();
   }
-  //balls[num].move();
-  //balls[num].draw();
+  fill(#0066ff);
+  circle(width/2-70,50,50);
+  
+  fill(#ff0066);
+  circle(width/2,50,50);
+  
+  fill(#ffff00);
+  circle(width/2+70,50,50);
 }
 
 public void mousePressed() {
+  
   balls[num] = new Ball();
   num++;
 }

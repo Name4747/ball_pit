@@ -1,6 +1,7 @@
 public class Ball {
   int x, y, vx, vy;
   int size;
+  color c = #0066ff;
   
   public Ball() {
     this.x = (int) mouseX;
@@ -11,7 +12,7 @@ public class Ball {
   }
   
   public void draw() {
-    fill(#66ccff);
+    fill(c);
     circle(x,y,size);
   }
   
